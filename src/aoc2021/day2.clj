@@ -26,9 +26,9 @@
     (* progress depth)))
 
 (defn -main
-  [input]
-  (with-open [rdr (clojure.java.io/reader input)]
-    (let [lines (line-seq rdr)
-          commands (map parse-command lines)]
-      (println "Part 1: " (solve1 commands))
-      (println "Part 2: " (solve2 commands)))))
+ [input]
+ (with-open [rdr (clojure.java.io/reader input)]
+   (let [lines (line-seq rdr)
+         commands (map parse-command lines)]
+     (println "Part 1: " (solve1 commands))
+     (println "Part 2: " (solve2 commands)))))
